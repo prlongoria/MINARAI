@@ -45,8 +45,19 @@ if (myArrayNumeros[0]<myArrayNumeros[1] && myArrayNumeros[1]<myArrayNumeros[2]){
 }*/
 
 //Ejercicio 3: Escribe un programa que pida un número y diga si es divisible por 2:
-let number = document.getElementById("evenNumber").value;
-console.log(number);
+
+const button = document.getElementById("button");
+button.onclick = function getNumberValue (){
+  let number = document.getElementById("evenNumber").value;
+  if (number %2 === 0){
+    document.getElementById("number").innerHTML = "El número es par";   
+  } else{
+    document.getElementById("number").innerHTML = "El número es impar";
+  }
+}
+
+//Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a
+
 
 
 

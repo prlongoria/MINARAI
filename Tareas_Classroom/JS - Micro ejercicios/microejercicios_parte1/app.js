@@ -23,9 +23,9 @@ if (personName != "") {
   }*/
 
   //ejercicio 4: Escribe un programa que pida un número, pida otro número y escriba el resultado de sumar estos dos números
-   /* let x,y;
+    let x,y;
     x = prompt("Ingrese numero uno: ");
     y = prompt("Ingrese numero dos: ");    
     let result = parseFloat(x)+ parseFloat(y);
     document.getElementById("suma").innerHTML =result;
-    */
+    
