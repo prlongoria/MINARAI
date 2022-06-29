@@ -13,7 +13,7 @@ button.onclick= function getVowelsOfPhrase() {
         if (vowels.includes(arrayPhraseElement)) {
             arrayOfVowels.push(arrayPhraseElement);
         }
-        //return arrayOfVowels;
+        
        
     }
     document.getElementById('vowels').innerHTML = arrayOfVowels;
