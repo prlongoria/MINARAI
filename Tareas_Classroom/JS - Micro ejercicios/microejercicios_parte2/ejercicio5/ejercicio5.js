@@ -4,7 +4,8 @@ let button = document.getElementById("button");
 button.onclick= function getVowelsOfPhrase() {
     let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     let phrase = document.getElementById("phraseInput").value; //recojo lo que pone el usuario en el input
-    let arrayPhrase = phrase.split(""); //convierto la phrase (string) en un array
+    let arrayPhrase = phrase.split(""); //convierto la phrase (string) en un array y la divido en letras
+    //console.log(arrayPhrase);
     let arrayOfVowels = [];
 
     for (var i = 0; i < arrayPhrase.length; i++) {
