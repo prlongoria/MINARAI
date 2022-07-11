@@ -9,8 +9,20 @@ button.onclick = function getNumberOfEachVowel() {
     let vowels = sentenceLowerCase.match(/[aeiou]/g) || [];
     let result = {"a":0, "e":0, "i":0, "o":0, "u":0};
     vowels.map((element) => result[element]++);
-    document.getElementById("printVowels").innerHTML= vowels;
+    document.getElementById("printVowels").innerHTML= "Hay " + result.a + "letras a";
+    /*`
+       Esta frase contiene ${result.a} letras a,
+        ${result.e} letras e,
+        ${result.i} letras i,
+        ${result.o} letras o y
+        ${result.u} letras u
+    `;*/
+    
     console.log (result);
+
+
+
+    
 
     /*
     const getVowels = (str) => {
