@@ -45,7 +45,7 @@ button.onclick = function getYourCommonDivisors() {
             sameDivisors.push(element);
         };
     });
-
+    document.getElementById("result").innerHTML = sameDivisors;
     console.log(sameDivisors);
     //Falta imprimirlo en pantalla   
     
