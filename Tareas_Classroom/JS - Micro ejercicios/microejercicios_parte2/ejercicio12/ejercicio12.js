@@ -7,20 +7,27 @@ button.onclick = function isAPrimeNumber() {
 
     const number = document.getElementById("number").value;
     
-    let arrayDivisors = [];
+    let arrayPosibleDivisors = [];
 
-    for (let index = 0; index < number/arrayDivisors; index++) {
-        arrayDivisors.push(index+1);
+    for (let index = 0; index < number/2; index++) {
+        arrayPosibleDivisors.push(index+1);   
+         
     }
-    console.log(arrayDivisors);
-    
-    arrayDivisors.forEach(element => {
-        if (number%1===0 && number%number===0 && !number/element===0) {
-            document.getElementById("primeNumber").innerHTML = `El número ` + number + ` es primo`;
-        }
-        
-    });
+    arrayPosibleDivisors.shift();
+    console.log(arrayPosibleDivisors);
 
+    const arrayDivisors = [];
+    
+    arrayPosibleDivisors.forEach(element => {
+        if (number%element===0) {
+            arrayDivisors.push(element);           
+        }
+    });
+    if (arrayDivisors.length ===0){
+        document.getElementById("primeNumber").innerHTML = `El número ` + number + ` es primo`;
+        return;
+    }
+    document.getElementById("primeNumber").innerHTML = `El número ` + number + ` no es primo`;
 
 }
 
